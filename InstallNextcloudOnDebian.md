@@ -5,9 +5,13 @@
 Install Debian:
 Download the Debian iso from here:
 <https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.6.0-amd64-netinst.iso>
+
 Write it to USB thumb drive with something like Balena Etcher
+
 Boot to it
+
 Go through the installer like usual
+
 Reboot into the new OS
 
 login as root and enable ssh and sudo:
