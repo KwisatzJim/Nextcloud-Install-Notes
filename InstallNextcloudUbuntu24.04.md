@@ -3,9 +3,13 @@
 Install Ubuntu 24.04:
 
 Download the Ubuntu iso from here: https://releases.ubuntu.com/24.04/ubuntu-24.04-live-server-amd64.iso
+
 Write it to USB thumb drive with something like Balena Etcher
+
 Boot to it
+
 Go through the installer like usual
+
 Reboot into the new OS
 
 Install required packages:
