@@ -122,7 +122,7 @@ sudo systemctl restart redis
 Download and setup Nextcloud:
 
 ```
-wget https://download.nextcloud.com/server/releases/latest.zipunzip latest.zip && sudo chown -R www-data:www-data nextcloud && sudo mv nextcloud /var/www && sudo a2dissite 000-default.conf && sudo systemctl reload apache2
+wget https://download.nextcloud.com/server/releases/latest.zip && unzip latest.zip && sudo chown -R www-data:www-data nextcloud && sudo mv nextcloud /var/www && sudo a2dissite 000-default.conf && sudo systemctl reload apache2
 ```
 
 create automatic setup file:
