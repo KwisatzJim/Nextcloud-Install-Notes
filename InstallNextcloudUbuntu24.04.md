@@ -157,10 +157,21 @@ Add apache virtual host for Nextcloud:
 
 ```
 echo '<VirtualHost *:80>
-DocumentRoot "/var/www/nextcloud/"
-ServerName nextcloud
+    DocumentRoot "/var/www/nextcloud/"
+    ServerName nextcloud
 
-<Directory "/var/www/nextcloud/">     Require all granted     AllowOverride All     Options FollowSymLinks MultiViews </Directory>  <IfModule mod_dav.c>   Dav off </IfModule>  ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined
+    <Directory "/var/www/nextcloud/">
+        Require all granted
+        AllowOverride All
+        Options FollowSymLinks MultiViews
+    </Directory>
+
+    <IfModule mod_dav.c>
+      Dav off
+    </IfModule>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 </VirtualHost>' | sudo tee /etc/apache2/sites-available/nextcloud.conf > /dev/null
 ```
