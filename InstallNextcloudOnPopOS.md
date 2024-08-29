@@ -217,17 +217,17 @@ sudo vim /var/www/nextcloud/config/config.php
 Add the following:
 
 ```
-'memcache.local' => '\OC\Memcache\APCu',
-'memcache.distributed' => '\OC\Memcache\Redis',
-'memcache.locking' => '\OC\Memcache\Redis',
-'redis' =>
-array (
-'host' => 'localhost',
-'port' => 6379,
-'timeout' => 1.5,
-'read_timeout' => 1.5,
-'dbindex' => 0,
-),
+  'memcache.local' => '\OC\Memcache\APCu',
+  'memcache.distributed' => '\OC\Memcache\Redis',
+  'memcache.locking' => '\OC\Memcache\Redis',
+  'redis' =>
+  array (
+  'host' => 'localhost',
+  'port' => 6379,
+  'timeout' => 1.5,
+  'read_timeout' => 1.5,
+  'dbindex' => 0,
+  ),
 ```
 
 Correct permissions of config.php:
