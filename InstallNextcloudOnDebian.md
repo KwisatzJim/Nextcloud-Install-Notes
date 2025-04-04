@@ -82,7 +82,7 @@ enable fix for occ commands:
 
 ```
 php --ini
-sudo vi /etc/php/8.3/cli/php.ini
+sudo vi /etc/php/8.2/cli/php.ini
 ```
 
 add this to the bottom:
