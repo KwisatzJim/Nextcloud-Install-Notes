@@ -53,7 +53,7 @@ Create alias to use occ command that fixes the apc cli error until I can figure 
 
 ```
 echo 'function occ
-sudo -u www-data php occ $argv
+sudo -u www-data php8.3 occ $argv
 end' | tee -a ~/.config/fish/config.fish
 ```
 
@@ -274,7 +274,7 @@ sudo crontab -u www-data -e
 ```
 
 ```
-*/5  *  *  *  * php -f /var/www/nextcloud/cron.php
+*/5  *  *  *  * php8.3 -f /var/www/nextcloud/cron.php
 ```
 
 ```

@@ -70,7 +70,7 @@ Create alias to use occ command:
 
 ```
 echo 'function occ
-         sudo -u www-data php occ $argv
+         sudo -u www-data php8.2 occ $argv
 end' | tee -a ~/.config/fish/config.fish
 ```
 
@@ -294,7 +294,7 @@ sudo crontab -u www-data -e
 ```
 
 ```
-*/5  *  *  *  * php -f /var/www/nextcloud/cron.php
+*/5  *  *  *  * php8.2 -f /var/www/nextcloud/cron.php
 ```
 
 ```
