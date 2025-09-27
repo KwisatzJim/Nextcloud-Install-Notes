@@ -14,7 +14,7 @@ Go to gnome settings | details | about and change the device name field
 
 ```
 sudo add-apt-repository ppa:ondrej/php -y
-sudo apt-add-repository ppa:fish-shell/release-3 -y
+sudo apt-add-repository ppa:fish-shell/release-4 -y
 ```
 
 Install required packages:
