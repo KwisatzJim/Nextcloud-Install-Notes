@@ -15,7 +15,7 @@ Reboot into the new OS
 Install required packages:
 
 ```
-sudo apt update && sudo apt install -y needrestart needrestart-session mariadb-server php php-json php-date php-{apcu,bcmath,ctype,curl,dom,exif,fileinfo,ftp,gd,gmp,iconv,imagick,intl,ldap,mbstring,memcached,mysqlnd,posix,readline,redis,sysvsem,tokenizer,xml,xmlreader,xmlwriter,zip} libapache2-mod-php build-essential redis-server ffmpeg fish ssh vim apt-transport-https && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo systemctl enable --now apache2 && sudo systemctl enable --now mariadb && systemctl enable --now ssh && chsh -s /usr/bin/fish && fish
+sudo apt update && sudo apt install -y imagemagick needrestart needrestart-session mariadb-server php php-json php-date php-{apcu,bcmath,ctype,curl,dom,exif,fileinfo,ftp,gd,gmp,iconv,imagick,intl,ldap,mbstring,memcached,mysqlnd,posix,readline,redis,sysvsem,tokenizer,xml,xmlreader,xmlwriter,zip} libapache2-mod-php build-essential redis-server ffmpeg fish ssh vim apt-transport-https && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo systemctl enable --now apache2 && sudo systemctl enable --now mariadb && systemctl enable --now ssh && chsh -s /usr/bin/fish && fish
 ```
 
 configure fish:
