@@ -1,18 +1,16 @@
-# Nextcloud-Install-Notes
-My personal notes on installing Nextcloud
+# Nextcloud installation notes
 
-Creating this to both have a place to access this when needed in the future and for some reason my personal file is inaccessible, and to make available to the general public so that others might either find it of use or provide further refinements.
+These notes describe a manual Nextcloud installation for a small, self-hosted server using Apache, MariaDB, Redis, and optional Tailscale-only HTTPS access.
 
-There are different guides for different distros to take into account the different versions of PHP. Mostly geared toward the home user who wants a Nextcloud install that has https but doesn't have or want to pay for a domain, by way of using tailscale.
+The procedures were reviewed on September 19, 2026. Nextcloud 34 is the current production release; Nextcloud 35 is still a release candidate. The download command uses Nextcloud's `latest` URL, so it follows the current production release rather than a beta or release candidate.
 
-### InstallNextcloudOnPopOS.md
-These are my notes on installing Nextcloud on Pop!_OS with updated PHP and securing with tailscale, including obtaining a free certificate by use of the 'tailscale cert' command in order to enable https access. 
+## Choose an operating system
 
-### InstallNextcloudUbuntu24.04.md
-Notes with specifics for Ubuntu 24.04.
+- [Ubuntu 24.04 LTS](InstallNextcloudUbuntu24.04.md)
+- [Debian 13](InstallNextcloudOnDebian.md)
+- [Pop!_OS](InstallNextcloudOnPopOS.md)
+- [AlmaLinux 10](InstallNextcloudOnAlmaLinux.md)
 
-### InstallNextcloudOnDebian.md
-Notes with specifics for Debian.
-This one includes steps at the beginning to do the install by ssh-ing into the Debian server and performing the install remotely.
+The Debian-family pages lead to the shared [installation procedure](InstallNextcloud.md). AlmaLinux has a separate procedure because its package names, Apache layout, PHP-FPM service, firewall, and SELinux configuration differ substantially.
 
-
+Replace every placeholder before running a command. Back up the Nextcloud data directory, configuration, database, and encryption keys before upgrading or making major configuration changes. Check the [current system requirements](https://docs.nextcloud.com/server/stable/admin_manual/installation/system_requirements.html) before each new installation.
